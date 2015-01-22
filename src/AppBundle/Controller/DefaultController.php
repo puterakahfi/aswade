@@ -10,13 +10,11 @@ class DefaultController extends Controller
 {
 
     /**
-     * @Route("/app/example", name="homepage")
+     * @Route("/", name="homepage")
      */
     public function indexAction()
     {
         $translated = $this->get('translator')->trans('huhu');
-
-        return new Response($translated);
 
         return $this->render('default/index.html.twig');
     }
