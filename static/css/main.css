@@ -1,8 +1,10 @@
 #head-segment{
     height: 150px;
     margin-top: 60px;
-    border-bottom: solid 2px #29ABE0;
-    background: #FFFFFF url('../img/symphony.png');
+    border-bottom: solid 2px #191A1E;
+    color: white;
+    background: #FFFFFF url('../img/dark-header-img.jpg');
+
 }
 
 #content-element{
@@ -19,6 +21,7 @@
     text-align: center;
     border-top: 1px solid #e5e5e5;
     background: #29ABE0;
+     background: #FFFFFF url('../img/dark-header-img.jpg');
 }
 body{
     background: #EEEEEE;

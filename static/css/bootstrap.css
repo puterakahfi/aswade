@@ -4159,7 +4159,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-default {
   background-color: #131418;
-  border-color: #3e3f3a;
+  border-color: transparent;
 }
 .navbar-default .navbar-brand {
   color: #ffffff;
@@ -4660,7 +4660,7 @@ a.badge:focus {
   padding: 4px;
   margin-bottom: 20px;
   line-height: 1.42857143;
-  background-color: #f8f5f0;
+  background-color: #EEEEEE;
   border: 1px solid #dfd7ca;
   border-radius: 4px;
   -webkit-transition: border 0.2s ease-in-out;
