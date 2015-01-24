@@ -12,7 +12,7 @@
 
 
     <!-- Bootstrap core CSS -->
-    <link href="css/aswade.css" rel="stylesheet">
+    <link href="css/aswade-foundation.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
 
@@ -32,203 +32,254 @@
 
       <body>
 
-        <div ng-app="">
-            <!-- Fixed navbar -->
-            <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="#">ASWADE <sup><b>beta</b></sup></a>
-                    </div>
-                    <div class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav">
-                            <li class="active"><a href="#"><span class="fa fa-home"></span> Beranda</a></li>
-                            <li><a href="#about"><span class="fa fa-users"></span>  People</a></li>
-                            <li><a href="#about"><span class="fa fa-list"></span> Artikel</a></li>
-                            <li><a href="#contact"><span class="fa fa-image"></span>  Gallery</a></li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Calender Hirjiyah</a></li>
-                                    <li><a href="#">Template Kajian</a></li>
-                                    <li class="divider"></li>
-                                    <li class="dropdown-header">Project Lainnya</li>
-                                    <li><a href="#">Poster Dakwah</a></li>
-                                    <li><a href="#">Web Dakwah Template</a></li>
-                                    <li><a href="#">Icons</a></li>
-                                    <li><a href="#">Fonts Dakwah</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#contact">Tentang Kami</a></li>
-                        </ul>
 
 
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#" class="btn btn-link"><b><span class="fa fa-lock"></span> Login</b></a></li>
-                        </ul>
-                    </div><!--/.nav-collapse -->
-                </div>
-            </div>
+          <!-- Header and Nav -->
+          <nav class="top-bar" data-topbar>
+            <ul class="title-area">
+              <!-- Title Area -->
+              <li class="name">
+                <h1>
+                  <a href="#">
+                    ASWADE <sup><b>beta</b></sup>
+                </a>
+            </h1>
+        </li>
+        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+    </ul>
 
-            <div class="header-logo" id="head-segment">
-                <div class="container">
-                    <div class="row">
-                        <div class="center-block text-center">
-                            <h1>WE DESIGN FOR DAKWAH</h1>
-                            <form class="form-inline">
-                                <div class="form-group">
+    <section class="top-bar-section">
+      <!-- Left Nav Section -->
+      <ul class="left">
+        <li class="divider"></li>
+        <li class="has-dropdown">
+          <a class="active" href="#">Main Item 1</a>
+          <ul class="dropdown">
+            <li><label>Section Name</label></li>
+            <li><a href="#" class="">Dropdown Level 1</a></li>
+            <li><a href="#">Dropdown Option</a></li>
+            <li><a href="#">Dropdown Option</a></li>
+            <li class="divider"></li>
+            <li><label>Section Name</label></li>
+            <li><a href="#">Dropdown Option</a></li>
+            <li><a href="#">Dropdown Option</a></li>
+            <li><a href="#">Dropdown Option</a></li>
+            <li class="divider"></li>
+            <li><a href="#">See all →</a></li>
+        </ul>
+    </li>
+    <li class="divider"></li>
+    <li><a href="#">Main Item 2</a></li>
+    <li class="divider"></li>
+    <li class="has-dropdown">
+      <a href="#">Main Item 3</a>
+      <ul class="dropdown">
+        <li><a href="#">Dropdown Option</a></li>
+        <li><a href="#">Dropdown Option</a></li>
+        <li><a href="#">Dropdown Option</a></li>
+        <li class="divider"></li>
+        <li><a href="#">See all →</a></li>
+    </ul>
+</li>
 
-                                    <select class="form-control input-md">
-                                        <option>Calender Hijriyah</option>
-                                        <option>Template Kajian</option>
-                                        <option>Freebies</option>
-                                        <option>Poster Dakwah</option>
-                                    </select> </div>
-                                    <div class="form-group">
-                                        <input type="email" class="form-control input-md" id="exampleInputEmail2" placeholder="masukkan kata kunci">
-                                    </div>
-                                    <button type="submit" class="btn btn-info btn-md">Cari</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="container" id="content-element">
+</ul>
 
-                    <div class="row">
-                        <div class="col-xs-6 col-md-3">
-                            <div class="thumbnail">
-                                <img src="img/designs/6.jpg" class="featurette-image img-responsive"  alt="Generic placeholder image">
-                                <div class="caption">
-                                    <h5><b>Thumbnail label</b></h5>
-                                    <p>by : <a href="#">codejunior</a></p>
-                                    <p><b><span class="fa fa-thumbs-up"></span> 1200 &nbsp;&nbsp;
-                                        <span class="fa fa-eye"></span> 234</b>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-6 col-md-3">
-                            <div class="thumbnail">
-                                <img src="img/designs/11.jpg" class="featurette-image img-responsive" alt="Generic placeholder image">
-                                <div class="caption">
-                                    <h5><b>Thumbnail label little..</b></h5>
-                                    <p>by : <a href="#">codejunior</a></p>
-                                    <p><b><span class="fa fa-thumbs-up"></span> 1200 &nbsp;&nbsp;
-                                        <span class="fa fa-eye"></span> 234</b>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-6 col-md-3">
-                            <div class="thumbnail">
-                                <img src="img/designs/8.jpg" class="featurette-image img-responsive"  alt="Generic placeholder image">
-                                <div class="caption">
-                                    <h5><b>Thumbnail label little..</b></h5>
-                                    <p>by : <a href="#">codejunior</a></p>
-                                    <p><b><span class="fa fa-thumbs-up"></span> 1200 &nbsp;&nbsp;
-                                        <span class="fa fa-eye"></span> 234</b>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-6 col-md-3">
-                            <div class="thumbnail">
-                                <img src="img/designs/9.jpg" class="featurette-image img-responsive"  alt="Generic placeholder image">
-                                <div class="caption">
-                                    <h5><b>Thumbnail label little..</b></h5>
-                                    <p>by : <a href="#">codejunior</a></p>
-                                    <p><b><span class="fa fa-thumbs-up"></span> 1200 &nbsp;&nbsp;
-                                        <span class="fa fa-eye"></span> 234</b>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+<!-- Right Nav Section -->
+<ul class="right">
+    <li class="divider"></li>
+    <li class="has-dropdown">
+      <a href="#">Main Item 4</a>
+      <ul class="dropdown">
+        <li><label>Section Name</label></li>
+        <li class="has-dropdown">
+          <a href="#" class="">Has Dropdown, Level 1</a>
+          <ul class="dropdown">
+            <li><a href="#">Dropdown Options</a></li>
+            <li><a href="#">Dropdown Options</a></li>
+            <li class="has-dropdown">
+              <a href="#">Has Dropdown, Level 2</a>
+              <ul class="dropdown test">
+                <li><a href="#">Subdropdown Option</a></li>
+                <li><a href="#">Subdropdown Option</a></li>
+                <li><a href="#">Subdropdown Option</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Subdropdown Option</a></li>
+        <li><a href="#">Subdropdown Option</a></li>
+        <li><a href="#">Subdropdown Option</a></li>
+    </ul>
+</li>
+<li><a href="#">Dropdown Option</a></li>
+<li><a href="#">Dropdown Option</a></li>
+<li class="divider"></li>
+<li><label>Section Name</label></li>
+<li><a href="#">Dropdown Option</a></li>
+<li><a href="#">Dropdown Option</a></li>
+<li><a href="#">Dropdown Option</a></li>
+<li class="divider"></li>
+<li><a href="#">See all →</a></li>
+</ul>
+</li>
+<li class="divider"></li>
+<li><a href="#">Main Item 5</a></li>
+<li class="divider"></li>
+<li class="has-dropdown">
+  <a href="#">Main Item 6</a>
+  <ul class="dropdown">
+    <li><a href="#">Dropdown Option</a></li>
+    <li><a href="#">Dropdown Option</a></li>
+    <li><a href="#">Dropdown Option</a></li>
+    <li class="divider"></li>
+    <li><a href="#">See all →</a></li>
+</ul>
+</li>
+</ul>
+</section>
+</nav>
 
 
+<!-- End Header and Nav -->
 
-                        <div class="col-xs-6 col-md-3">
-                            <div class="thumbnail">
-                                <img src="img/designs/11.jpg" class="featurette-image img-responsive" alt="Generic placeholder image">
-                                <div class="caption">
-                                    <h5><b>Thumbnail label little..</b></h5>
-                                    <p>by : <a href="#">codejunior</a></p>
-                                    <p><b><span class="fa fa-thumbs-up"></span> 1200 &nbsp;&nbsp;
-                                        <span class="fa fa-eye"></span> 234</b>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+<!-- Main Grid Section -->
 
-                        <div class="col-xs-6 col-md-3">
-                            <div class="thumbnail">
-                                <img src="img/designs/9.jpg" class="featurette-image img-responsive"  alt="Generic placeholder image">
-                                <div class="caption">
-                                    <h5><b>Thumbnail label little..</b></h5>
-                                    <p>by : <a href="#">codejunior</a></p>
-                                    <p><b><span class="fa fa-thumbs-up"></span> 1200 &nbsp;&nbsp;
-                                        <span class="fa fa-eye"></span> 234</b>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+<div class="row">
+
+    <div class="large-3 columns">
+      <div class="panel">
+        <h5>Panel Title</h5>
+        <p>This is a three columns grid panel with an arbitrary height.</p>
+    </div>
+</div>
+<div class="large-6 columns">
+  <div class="panel">
+    <h5>Panel Title</h5>
+    <p>This is a six columns grid panel with an arbitrary height. Bacon ipsum dolor sit amet salami ham hock biltong ball tip drumstick sirloin pancetta meatball short loin.</p>
+</div>
+</div>
+<div class="large-3  columns">
+  <div class="panel">
+    <h5>Panel Title</h5>
+    <p>This is a three columns grid panel with an arbitrary height.</p>
+</div>
+</div>
+
+</div>
 
 
 
-                        <div class="col-xs-6 col-md-3">
-                            <div class="thumbnail">
-                                <img src="img/designs/6.jpg" class="featurette-image img-responsive"  alt="Generic placeholder image">
-                                <div class="caption">
-                                    <h5><b>Thumbnail label</b></h5>
-                                    <p>by : <a href="#">codejunior</a></p>
-                                    <p><b><span class="fa fa-thumbs-up"></span> 1200 &nbsp;&nbsp;
-                                        <span class="fa fa-eye"></span> 234</b>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-6 col-md-3">
-                            <div class="thumbnail">
-                                <img src="img/designs/8.jpg" class="featurette-image img-responsive"  alt="Generic placeholder image">
-                                <div class="caption">
-                                    <h5><b>Thumbnail label little..</b></h5>
-                                    <p>by : <a href="#">codejunior</a></p>
-                                    <p><b><span class="fa fa-thumbs-up"></span> 1200 &nbsp;&nbsp;
-                                        <span class="fa fa-eye"></span> 234</b>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+<div class="row">
+
+    <div class="large-6 columns">
+      <div class="panel">
+        <h5>Panel Title</h5>
+        <p>This is a six columns grid panel with an arbitrary height. Bacon ipsum dolor sit amet salami ham hock biltong ball tip drumstick sirloin pancetta meatball short loin.</p>
+    </div>
+</div>
+<div class="large-2 columns">
+  <div class="panel">
+    <p>
+      <img src="http://placehold.it/200x200" />
+  </p>
+</div>
+</div>
+<div class="large-4 columns">
+  <div class="panel">
+    <h5>Panel Title</h5>
+    <p>This is a four columns grid panel with an arbitrary height. Bacon ipsum dolor sit amet salami.</p>
+</div>
+</div>
+
+</div>
+
+
+<div class="row">
+
+    <div class="large-4 columns">
+      <div class="panel">
+        <p>
+          <img src="http://placehold.it/400x300" />
+      </p>
+  </div>
+</div>
+<div class="large-4 columns">
+  <div class="panel">
+    <p>
+      <img src="http://placehold.it/400x300" />
+  </p>
+</div>
+</div>
+<div class="large-4 columns">
+  <div class="panel">
+    <p>
+      <img src="http://placehold.it/400x300" />
+  </p>
+</div>
+</div>
+
+</div>
+
+
+<div class="row">
+
+    <div class="large-6 columns">
+      <div class="panel">
+        <h5>Panel Title</h5>
+        <p>This is a six columns grid panel with an arbitrary height. Bacon ipsum dolor sit amet salami ham hock biltong ball tip drumstick sirloin pancetta meatball short loin.</p>
+    </div>
+</div>
+<div class="large-3 columns">
+  <div class="panel">
+    <h5>Panel Title</h5>
+    <p>This is a three columns grid panel with an arbitrary height.</p>
+</div>
+</div>
+<div class="large-3 columns">
+  <div class="panel">
+    <h5>Panel Title</h5>
+    <p>This is a three columns grid panel with an arbitrary height.</p>
+</div>
+</div>
+
+</div>
+
+<!-- End Grid Section -->
+
+<!-- Footer -->
+
+<footer class="row">
+    <div class="large-12 columns">
+      <hr />
+      <div class="row">
+        <div class="large-6 columns">
+          <p>© Copyright no one at all. Go to town.</p>
+      </div>
+      <div class="large-6 columns">
+          <ul class="inline-list right">
+            <li><a href="#">Section 1</a></li>
+            <li><a href="#">Section 2</a></li>
+            <li><a href="#">Section 3</a></li>
+            <li><a href="#">Section 4</a></li>
+        </ul>
+    </div>
+</div>
+</div>
+</footer>
 
 
 
 
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-foundation/mm-foundation.min.js"></script>
+<script src="bower_components/modernizr/modernizr.js"></script>
+<script src="bower_components/foundation/js/foundation.min.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
 
-                    </div>
 
-                </div> <!-- /container -->
+</body>
+</html>
 
-                <div class="footer" id="footer-element">
-                    <div class="container">
-                        footer here
-                    </div>
-                </div>
-            </div>
-
-            <!-- Placed at the end of the document so the pages load faster -->
-            <script src="bower_components/jquery/dist/jquery.min.js"></script>
-            <script src="js/bootstrap.min.js"></script>
-            <script src="bower_components/angular/angular.min.js"></script>
-            <script src="js/aswade.js"></script>
-            <script src="bower_components/velocity/velocity.js"></script>
-            <script src="bower_components/moment/min/moment-with-locales.min.js"></script>
-            <script src="bower_components/lumx/dist/js/lumx.js"></script>
-
-        </body>
-        </html>
 
