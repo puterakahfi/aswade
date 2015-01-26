@@ -49,8 +49,8 @@
                         <!-- Right Nav Section -->
 
                         <ul class="left">
-                            <li class="active"><a href="#"><span class="fa fa-home"></span> Beranda</a></li>
-                            <li><a href="#"><span class="fa fa-users"></span> Designers</a></li>
+                            <li class="active"><a href="#beranda"><span class="fa fa-home"></span> Beranda</a></li>
+                            <li><a href="#designers"><span class="fa fa-users"></span> Designers</a></li>
                             <li class="has-dropdown">
                                 <a href="#">Projects</a>
                                 <ul class="dropdown">
@@ -60,7 +60,7 @@
                                     <li><a href="#">Educative Projects</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#">Tentang Kami</a></li>
+                            <li><a href="#about">Tentang Kami</a></li>
                         </ul>
 
 
@@ -114,138 +114,8 @@
             <!-- Main Grid Section -->
             <div class="container" id="content-container">
 
+                <div ui-view></div>
 
-                <div ng-controller="GalleryCtrl">
-                    <div class="row">
-                        <div class="large-3 columns ">
-                            <div class="th [radius] gallery-wrapper" ng-click="detailGallery()">
-
-                                <img src="img/designs/6.jpg" />
-
-                                <dl> 
-                                    <dt>Definition Title here...</dt> 
-                                    <dd>By : <a href="#">codejunior</a></dd>
-                                    <dd class="text-center">
-                                        <hr/>
-                                        <span class=" fa fa-thumbs-up"></span> 100
-                                        <span class=" fa fa-eye"></span> 300</dd> 
-                                </dl>
-                            </div>
-                        </div>
-                        <div class="large-3 columns">
-
-
-                            <div class="th [radius] 30 gallery-wrapper">
-                                <img src="img/designs/11.jpg" />
-
-                                <dl> 
-                                    <dt>Definition Title here...</dt> 
-                                    <dd>By : <a href="#">codejunior</a></dd>
-                                    <dd class="text-center">
-                                        <hr/>
-                                        <span class=" fa fa-thumbs-up"></span> 100
-                                        <span class=" fa fa-eye"></span> 300</dd> 
-                                </dl>
-
-                            </div>
-                        </div>
-                        <div class="large-3 columns">
-                            <div class="th [radius] gallery-wrapper">
-
-                                <img src="img/designs/8.jpg" />
-
-                                <dl > 
-                                    <dt>Definition Title here...</dt> 
-                                    <dd>By : <a href="#">codejunior</a></dd>
-                                    <dd class="text-center">
-                                        <hr/>
-                                        <span class=" fa fa-thumbs-up"></span> 100
-                                        <span class=" fa fa-eye"></span> 300</dd> 
-                                </dl>
-
-                            </div>
-                        </div>
-                        <div class="large-3 columns">
-                            <div class="th [radius] gallery-wrapper">
-
-                                <img src="img/designs/9.jpg" />
-
-                                <dl> 
-                                    <dt>Definition Title here...</dt> 
-                                    <dd>By : <a href="#">codejunior</a></dd>
-                                    <dd class="text-center">
-                                        <hr/>
-                                        <span class=" fa fa-thumbs-up"></span> 100
-                                        <span class=" fa fa-eye"></span> 300</dd> 
-                                </dl>
-                            </div>
-                        </div>
-                        <div class="large-3 columns ">
-                            <div class="th [radius] gallery-wrapper">
-
-                                <img src="img/designs/6.jpg" />
-
-                                <dl> 
-                                    <dt>Definition Title here...</dt> 
-                                    <dd>By : <a href="#">codejunior</a></dd>
-                                    <dd class="text-center">
-                                        <hr/>
-                                        <span class=" fa fa-thumbs-up"></span> 100
-                                        <span class=" fa fa-eye"></span> 300</dd> 
-                                </dl>
-                            </div>
-                        </div>
-                        <div class="large-3 columns">
-
-
-                            <div class="th [radius] 30 gallery-wrapper">
-                                <img src="img/designs/11.jpg" />
-
-                                <dl> 
-                                    <dt>Definition Title here...</dt> 
-                                    <dd>By : <a href="#">codejunior</a></dd>
-                                    <dd class="text-center">
-                                        <hr/>
-                                        <span class=" fa fa-thumbs-up"></span> 100
-                                        <span class=" fa fa-eye"></span> 300</dd> 
-                                </dl>
-
-                            </div>
-                        </div>
-                        <div class="large-3 columns">
-                            <div class="th [radius] gallery-wrapper">
-
-                                <img src="img/designs/8.jpg" />
-
-                                <dl> 
-                                    <dt>Definition Title here...</dt> 
-                                    <dd>By : <a href="#">codejunior</a></dd>
-                                    <dd class="text-center">
-                                        <hr/>
-                                        <span class=" fa fa-thumbs-up"></span> 100
-                                        <span class=" fa fa-eye"></span> 300</dd> 
-                                </dl>
-
-                            </div>
-                        </div>
-                        <div class="large-3 columns">
-                            <div class="th [radius] gallery-wrapper">
-
-                                <img src="img/designs/9.jpg" />
-
-                                <dl> 
-                                    <dt>Definition Title here...</dt> 
-                                    <dd>By : <a href="#">codejunior</a></dd>
-                                    <dd class="text-center">
-                                        <hr/>
-                                        <span class=" fa fa-thumbs-up"></span> 100
-                                        <span class=" fa fa-eye"></span> 300</dd> 
-                                </dl>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
             </div>
 
             <!-- End Grid Section -->
@@ -276,12 +146,13 @@
         <!-- Placed at the end of the document so the pages load faster -->
         <script src="bower_components/jquery/dist/jquery.min.js"></script>
         <script src="bower_components/angular/angular.min.js"></script>
-        <script src="js/aswade.js"></script>
+        <script src="js/app.js"></script>
+        <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
         <script src="bower_components/angular-foundation/mm-foundation.min.js"></script>
         <script src="bower_components/modernizr/modernizr.js"></script>
         <script src="bower_components/foundation/js/foundation.min.js"></script>
         <script>
-      $(document).foundation();
+            $(document).foundation();
         </script>
 
 

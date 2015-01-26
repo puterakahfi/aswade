@@ -1,16 +1,74 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div>TODO write content</div>
-    </body>
-</html>
+<div ng-controller="designerCtrl">
+
+    <div class="row">
+        <h1>Designers </h1>
+        <div ng-repeat="gal in gallery">
+            <div class="large-3 columns ">
+                <div class="th [radius] gallery-wrapper" ng-click="detailGallery()" >
+
+                    <img src="img/designs/6.jpg" />
+
+                    <dl> 
+                        <dt><a href="detail_gallery.html">Definition Title here...</a></dt> 
+                        <dd>By : <a href="#">codejunior</a></dd>
+                        <dd class="text-center">
+                            <hr/>
+                            <span class=" fa fa-thumbs-up"></span> 100
+                            <span class=" fa fa-eye"></span> 300</dd> 
+                    </dl>
+                </div>
+            </div>
+            <div class="large-3 columns">
+
+
+                <div class="th [radius] 30 gallery-wrapper">
+                    <img src="img/designs/11.jpg" />
+
+                    <dl> 
+                        <dt>Definition Title here...</dt> 
+                        <dd>By : <a href="#">codejunior</a></dd>
+                        <dd class="text-center">
+                            <hr/>
+                            <span class=" fa fa-thumbs-up"></span> 100
+                            <span class=" fa fa-eye"></span> 300</dd> 
+                    </dl>
+
+                </div>
+            </div>
+            <div class="large-3 columns">
+                <div class="th [radius] gallery-wrapper">
+
+                    <img src="img/designs/8.jpg" />
+
+                    <dl > 
+                        <dt>Definition Title here...</dt> 
+                        <dd>By : <a href="#">codejunior</a></dd>
+                        <dd class="text-center">
+                            <hr/>
+                            <span class=" fa fa-thumbs-up"></span> 100
+                            <span class=" fa fa-eye"></span> 300</dd> 
+                    </dl>
+
+                </div>
+            </div>
+            <div class="large-3 columns">
+                <div class="th [radius] gallery-wrapper">
+
+                    <img src="img/designs/9.jpg" />
+
+                    <dl> 
+                        <dt>Definition Title here...</dt> 
+                        <dd>By : <a href="#">codejunior</a></dd>
+                        <dd class="text-center">
+                            <hr/>
+                            <span class=" fa fa-thumbs-up"></span> 100
+                            <span class=" fa fa-eye"></span> 300</dd> 
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
