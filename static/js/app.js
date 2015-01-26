@@ -15,6 +15,16 @@ app.config(function($stateProvider, $urlRouterProvider) {
                 templateUrl: "partials/designers.html",
                 controller: "designerCtrl"
             })
+            .state('detail-design', {
+                url: "/detail-design",
+                templateUrl: "partials/detail_design.html",
+                controller: "designerCtrl"
+            })
+            .state('detail-designer', {
+                url: "/detail-designer",
+                templateUrl: "partials/detail_designer.html",
+                controller: "designerCtrl"
+            })
             .state('about', {
                 url: "/about",
                 templateUrl: "partials/about.html"
@@ -25,7 +35,7 @@ app.controller('aswadeCtrl', function($scope) {
 
 app.controller('berandaCtrl', function($scope) {
     $scope.gallery = [1, 2, 3, 4];
-    $scope.detailGallery =function(){
+    $scope.detailGallery = function() {
         alert('testing');
     };
 });
