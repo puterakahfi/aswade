@@ -28,6 +28,14 @@ app.config(function($stateProvider, $urlRouterProvider) {
             .state('about', {
                 url: "/about",
                 templateUrl: "partials/about.html"
+            })
+             .state('searh-result', {
+                url: "/search-result",
+                templateUrl: "partials/search_result.html"
+            })
+            .state('login', {
+                url: "/login",
+                templateUrl: "partials/login.html"
             });
 });
 app.controller('aswadeCtrl', function($scope) {
