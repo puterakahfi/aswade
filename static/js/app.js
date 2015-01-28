@@ -76,7 +76,7 @@ app.controller('designerCtrl', function ($scope) {
 });
 
 app.controller('detailDesignCtrl', function ($scope) {
-
+$scope.gallery = [1, 2];
 });
 
 
