@@ -1,0 +1,1 @@
+angular.module('galleryModule',['aswadeApp.gallery.controllers','aswadeApp.gellery.directives']);
