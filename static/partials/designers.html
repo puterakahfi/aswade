@@ -2,52 +2,31 @@
 
     <div class="row">
         <h4>Designers </h4><hr/>
+
+
         <div ng-repeat="gal in gallery">
             <div class="large-3 columns ">
                 <div class="th [radius] gallery-wrapper" ng-click="detailGallery()" >
 
                     <img src="img/designs/6.jpg" />
 
-                    <dl> 
-                        <dt><a href="detail_gallery.html">Definition Title here...</a></dt> 
-                        <dd>By : <a href="#">codejunior</a></dd>
-                        <dd class="text-center">
-                            <hr/>
-                            <span class=" fa fa-thumbs-up"></span> 100
-                            <span class=" fa fa-eye"></span> 300</dd> 
-                    </dl>
-                </div>
-            </div>
-            <div class="large-3 columns">
-
-
-                <div class="th [radius] 30 gallery-wrapper">
-                    <img src="img/designs/11.jpg" />
-
-                    <dl> 
-                        <dt>Definition Title here...</dt> 
-                        <dd>By : <a href="#">codejunior</a></dd>
-                        <dd class="text-center">
-                            <hr/>
-                            <span class=" fa fa-thumbs-up"></span> 100
-                            <span class=" fa fa-eye"></span> 300</dd> 
-                    </dl>
 
                 </div>
             </div>
             <div class="large-3 columns">
-                <div class="th [radius] gallery-wrapper">
 
-                    <img src="img/designs/8.jpg" />
 
-                    <dl > 
-                        <dt>Definition Title here...</dt> 
-                        <dd>By : <a href="#">codejunior</a></dd>
-                        <dd class="text-center">
-                            <hr/>
-                            <span class=" fa fa-thumbs-up"></span> 100
-                            <span class=" fa fa-eye"></span> 300</dd> 
-                    </dl>
+                <div class="th [radius] 30 gallery-wrapper ng-click="detailGallery(">
+                     <img src="img/designs/11.jpg" />
+
+
+                </div>
+            </div>
+            <div class="large-3 columns">
+                <div class="th [radius] gallery-wrapper ng-click="detailGallery(">
+
+                     <img src="img/designs/8.jpg" />
+
 
                 </div>
             </div>
@@ -56,19 +35,29 @@
 
                     <img src="img/designs/9.jpg" />
 
-                    <dl> 
-                        <dt>Definition Title here...</dt> 
-                        <dd>By : <a href="#">codejunior</a></dd>
-                        <dd class="text-center">
-                            <hr/>
-                            <span class=" fa fa-thumbs-up"></span> 100
-                            <span class=" fa fa-eye"></span> 300</dd> 
-                    </dl>
+
                 </div>
             </div>
 
         </div>
 
+
+
+    </div>
+
+    <div class="row">
+        <div class="large-12 small-6 columns">
+            <ul class="pagination ">
+                <li class="arrow unavailable"><a href="">&laquo;</a></li>
+                <li class="current"><a href="">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">4</a></li>
+                <li><a href="">5</a></li>
+                <li><a href="">6</a></li>
+                <li class="arrow"><a href="">&raquo;</a></li>
+            </ul>
+        </div>
     </div>
 
 </div>
