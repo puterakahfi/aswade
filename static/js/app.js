@@ -1,5 +1,5 @@
-var app = angular.module('aswadeApp', ['ui.router']);
-app.config(function($stateProvider, $urlRouterProvider) {
+var app = angular.module('aswadeApp', ['ui.router', 'mm.foundation']);
+app.config(function ($stateProvider, $urlRouterProvider) {
     //
     // For any unmatched url, redirect to /state1
     $urlRouterProvider.otherwise("/beranda");
@@ -29,7 +29,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
                 url: "/about",
                 templateUrl: "partials/about.html"
             })
-             .state('searh-result', {
+            .state('searh-result', {
                 url: "/search-result",
                 templateUrl: "partials/search_result.html"
             })
@@ -38,24 +38,45 @@ app.config(function($stateProvider, $urlRouterProvider) {
                 templateUrl: "partials/login.html"
             });
 });
-app.controller('aswadeCtrl', function($scope) {
+app.controller('aswadeCtrl', function ($scope) {
 });
 
-app.controller('berandaCtrl', function($scope) {
+app.controller('berandaCtrl', function ($scope, $modal) {
     $scope.gallery = [1, 2, 3, 4];
-    $scope.detailGallery = function() {
-        alert('testing');
+    $scope.detailDesign = function () {
+
+        var modalInstance = $modal.open({
+            backdrop: true,
+            modalTemplate: '<div class="modal modal-width-override" ng-transclude></div>',
+            templateUrl: 'partials/detail_design.html',
+            controller: 'detailDesignCtrl',
+            resolve: {
+                items: function () {
+                    return $scope.items;
+                }
+            }
+        });
+
+        modalInstance.result.then(function (selectedItem) {
+            $scope.selected = selectedItem;
+        }, function () {
+            $log.info('Modal dismissed at: ' + new Date());
+        });
     };
 });
 
-app.controller('aboutCtrl', function($scope) {
+app.controller('aboutCtrl', function ($scope) {
 });
 
-app.controller('loginCtrl', function($scope) {
+app.controller('loginCtrl', function ($scope) {
 });
 
-app.controller('designerCtrl', function($scope) {
+app.controller('designerCtrl', function ($scope) {
     $scope.gallery = [1, 2, 3, 4];
+});
+
+app.controller('detailDesignCtrl', function ($scope) {
+
 });
 
 
