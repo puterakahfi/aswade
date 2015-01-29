@@ -45,23 +45,7 @@ app.controller('berandaCtrl', function ($scope, $modal) {
     $scope.gallery = [1, 2, 3, 4];
     $scope.detailDesign = function () {
 
-        var modalInstance = $modal.open({
-            backdrop: true,
-            modalTemplate: '<div class="modal modal-width-override" ng-transclude></div>',
-            templateUrl: 'partials/detail_design.html',
-            controller: 'detailDesignCtrl',
-            resolve: {
-                items: function () {
-                    return $scope.items;
-                }
-            }
-        });
-
-        modalInstance.result.then(function (selectedItem) {
-            $scope.selected = selectedItem;
-        }, function () {
-            $log.info('Modal dismissed at: ' + new Date());
-        });
+       
     };
 });
 
